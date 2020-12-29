@@ -9,19 +9,16 @@
 # --------------------------
 title: Arturo Alcibia                          # the main title
 
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
-
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  A blog so my files and thoughts
+  don't get lost in my unnamed
+  computer folders.
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: https://arturoalcibia.dev
 
-author: your_full_name                  # change to your full name
+author: Arturo Alcibia                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
   username: github_username             # change to your github username

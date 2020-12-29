@@ -9,29 +9,16 @@
 <div id="sidebar" class="d-flex flex-column align-items-end">
 
   <div class="profile-wrapper text-center">
-    <div id="avatar">
-      <a href="{{ site.baseurl }}/" alt="avatar" class="mx-auto">
-        {% assign avatar_url = site.avatar %}
-        {% capture start %}{{ site.avatar | slice: 0 }}{% endcapture %}
-        {% if start == '/' %}
-          {% assign avatar_url = avatar_url | prepend: site.baseurl %}
-        {% endif %}
-        <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
-      </a>
-    </div>
-
     <div class="site-title mt-3">
       <a href="{{ '/' | relative_url }}">{{- site.title -}}</a>
     </div>
-      <div id="typewriter" align="left" style="padding-left: 50px"></div>
+      <div id="typewriter" align="center"></div>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js">
       </script>
       <script type="text/javascript">
         const instance = new Typewriter('#typewriter', {
           loop: true
         });
-
-        instance.pasteString('        ');
         instance.typeString('I am a ');
 
         var textsToType = ['Pipeline T.D.', 'Developer', 'constant learner'];
@@ -50,7 +37,6 @@
 
         instance.start();
       </script>
-
   </div><!-- .profile-wrapper -->
 
   <ul class="w-100">
