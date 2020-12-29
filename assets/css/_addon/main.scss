@@ -187,13 +187,13 @@ $sidebar-display: "sidebar-display";
 
   .sidebar-bottom {
     font-size: 1.2rem;
-    margin-bottom: 2.1rem;
+    margin-bottom: 2.0rem;
 
     @include ml-mr(auto);
     @include pl-pr(1rem);
 
     %icon {
-      width: 2.4rem;
+      width: 2rem;
       text-align: center;
     }
 
@@ -1480,14 +1480,6 @@ img {
           }
 
           > i {
-            @include icon-round(1.65rem);
-
-            line-height: 1.5rem;
-            font-size: 0.6rem;
-            padding-top: 1px;
-            padding-left: 1px;
-            position: relative;
-            bottom: 1px;
 
             &.unloaded {
               display: inline-block !important;
@@ -1511,13 +1503,6 @@ img {
       a {
         font-size: 1rem;
         width: 3rem;
-      }
-
-      i {
-        @include icon-round(2rem);
-        padding-top: 0.44rem;
-        margin-top: .7rem; // multi line space
-        bottom: 0;
       }
 
       #mode-toggle-wrapper {
