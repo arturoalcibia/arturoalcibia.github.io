@@ -11,7 +11,7 @@
 @import "_colors/light-typography";
 @import "_colors/dark-typography";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 @mixin mode-toggle($dark-mode: false) {
@@ -55,7 +55,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'Roboto';
 }
 
 /*--- sidebar layout ---*/
@@ -187,7 +187,6 @@ $sidebar-display: "sidebar-display";
 
   .sidebar-bottom {
     font-size: 1.2rem;
-    margin-bottom: 2.0rem;
 
     @include ml-mr(auto);
     @include pl-pr(1rem);
