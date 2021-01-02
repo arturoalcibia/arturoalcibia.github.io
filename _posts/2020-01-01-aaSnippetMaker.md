@@ -2,15 +2,15 @@
 title: Visual scripting | Capture your actions inside Maya
 author: Arturo Alcibia
 date: 2021-01-01 00:00:00 +0800
-categories: [proyects]
-tags: [maya, python, PyQt, Qt]
+categories: [projects]
+tags: [Maya, python, PyQt, Qt]
 ---
 - [x] First post ever/of the year!
 
 # aaSnippetMaker
 
 
-## TLDR:
+## TL;DR:
 
 This tool captures everything you do on Maya to automatically have it converted to `Python`/`MEL`
 
@@ -37,7 +37,7 @@ While being open, it will capture every relevant action and have it saved on the
 Some action examples:
 - Create/Delete/Rename nodes
 - Create/Connect/Disconnect/Set attributes
-- Runtime maya commands
+- Runtime Maya commands
 - Among others
 
 #### Node stack:
@@ -59,7 +59,7 @@ the tool's UI.
 ---
 ## Future plans:
 
-Some pending to do's:
+Some pending to-do's:
 - [ ] From an already existing graph/scene, convert it to commands on the UI.
 - [ ] Undo actions/Stack traces can be tricky to actually reflect the end result.
 - [ ] Release it to the public!
