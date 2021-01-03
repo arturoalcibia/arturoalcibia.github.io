@@ -3,9 +3,9 @@ title: Visual scripting | Capture your actions inside Maya
 author: Arturo Alcibia
 date: 2021-01-01 00:00:00 +0800
 categories: [projects]
-tags: [Maya, python, PyQt, Qt]
+tags: [Maya, python, PyQt, Qt, script editor]
 ---
-- [x] First post ever/of the year!
+- [x] First post of the year!
 
 # aaSnippetMaker
 
