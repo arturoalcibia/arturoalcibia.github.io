@@ -1,5 +1,5 @@
 ---
-title: About
+title: About me
 icon: fas fa-info
 order: 4
 
@@ -10,5 +10,33 @@ order: 4
 # MIT License
 ---
 
+```shell
+> Hello world, this is Arturo.
+```
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+I'm a CG pipeline developer with experience in film production.<br>
+Always wanting to learn more and passionate on problem solving.
+
+I have experience developing in:
+
+- Maya
+- Nuke
+- Guerilla
+- Shotgun
+- RV
+- Unity
+
+Programming languages I've used:
+
+- Python
+- C++
+- C#
+- Lua
+
+Other skills:
+
+ - Bash
+ - Git
+ - Linux
+ - Qt
+ - Rez
