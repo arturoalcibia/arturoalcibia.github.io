@@ -9,10 +9,8 @@
 # --------------------------
 title: Arturo Alcibia                          # the main title
 
-description: >-                        # used by seo meta and the atom feed
-  A blog so my files and thoughts
-  don't get lost in my unnamed
-  computer folders.
+description: A blog so my files and thoughts don't get lost in my unnamed computer folders.
+
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: https://arturoalcibia.dev
