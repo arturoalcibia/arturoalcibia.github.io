@@ -1,0 +1,24 @@
+---
+layout: page
+---
+<div id="tags">
+  <div class="tag-groups">
+    {% for tag in site.tags %}
+    <div class="tag-group">
+      {% capture group %}{{ tag | first }}{% endcapture %}
+      <h4 id="{{ group }}" class="title">{{ group }}</h4>
+      <div class="items">
+        {% for post in site.tags[group] %}
+        <a href="{{ post.url | relative_url }}" class="post-link">
+          <div class="item">
+            <p class="meta">{{ post.date  | date: "%B %-d, %Y" }}</p>
+            <p class="title">{{ post.title }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
