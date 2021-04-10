@@ -11,14 +11,12 @@
         - title : 1. 블로그 첫 화면 구성
           image : home.png
           description : <li>Responsive Layout</li>
-            <li>User Profile</li> 
-            <li>Tags</li> 
+            <li>User Profile</li>
             <li>Projects</li> 
             <li>Pagination</li>
         - title : 2. 태그 페이지
           image : tags.png
-          description : <li>Responsive Layout</li> 
-            <li>Tags</li> 
+          description : <li>Responsive Layout</li>
         - title : 3. 남은 개발 과제
           image :
           description : <li>project 부분 디자인 변경</li>

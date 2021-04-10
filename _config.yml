@@ -33,9 +33,6 @@ theme_settings :
     facebook:
     instagram:
 
-  # Disqus
-  disqus_shortname :
-
 # Pagination
 paginate: 5
 paginate_path: "blog/page:num"
