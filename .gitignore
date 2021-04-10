@@ -1,7 +1,6 @@
-# hidden files
-.*
-!.github
-
-# jekyll cache
+*.gem
+.bundle
+.sass-cache
 _site
-vendor
+Gemfile.lock
+/.idea/
