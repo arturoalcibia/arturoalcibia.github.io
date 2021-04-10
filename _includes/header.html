@@ -10,6 +10,17 @@
         <li class="btn-nav">Blog</li>
       </a>
       <li class="current">Portfolio</li>
+      <a href="{{ site.url }}/about">
+        <li class="btn-nav">About</li>
+      </a>
+      {% when 'about'%}
+      <a href="{{ site.url }}">
+        <li class="btn-nav">Blog</li>
+      </a>
+      <a href="{{ site.url }}/portfolio">
+        <li class="btn-nav">Portfolio</li>
+      </a>
+      <li class="current">About</li>
       {% else %}
       <!-- others -->
       <a href="{{ site.url }}">
@@ -17,6 +28,9 @@
       </a>
       <a href="{{ site.url }}/portfolio">
         <li class="btn-nav">Portfolio</li>
+      </a>
+      <a href="{{ site.url }}/about">
+        <li class="btn-nav">About</li>
       </a>
       {% endcase %}
     </ul>
