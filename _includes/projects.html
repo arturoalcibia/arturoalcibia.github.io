@@ -1,6 +1,14 @@
+{% for collection in site.collections %}
+    {% unless collection.output == false or collection.label == "posts" %}
+        {% for post in collection.docs %}
+            {% unless collection.output == false or collection.label == "posts" %}
+            <p>{{ post.title }}</p>
+            {% endunless %}
+    {% endfor %}
+    {% endunless %}
+{% endfor %}
+
 <section id="project">
-  <div class="project-wrap">
-    <p class="title">PROJECTS 🙋🏻</p>
     <div class="card-container">
       {% for _ in site.data.projects %}
       {% assign project = _.project %}
@@ -47,7 +55,6 @@
       <!-- Modal Box -->
       {% endfor %}
     </div>
-  </div>
   <div class="bg"></div>
 </section>
 
