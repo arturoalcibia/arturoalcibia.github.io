@@ -41,6 +41,26 @@ paginate_path: "blog/page:num"
 sass:
   sass_dir: _sass
   style: :compressed
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+
+# Archives
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
 bootstrap:
   assets: true
+
+include:
+  - _pages
+defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+      author_profile: false
+      share: true
