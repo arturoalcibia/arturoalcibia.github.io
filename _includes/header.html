@@ -6,6 +6,15 @@
 <header>
   <nav>
     <ul>
+
+        <li class="name"><a href="{{ site.url }}"> Arturo Alcibia </a>
+          <ul>
+            {% for entry in site.data.contact %}
+              <li> <a href="{{ entry.link }}"> <i class="fa-cog {{ entry.icon }} fa-lg"></i></a> </li>
+            {% endfor %}
+          </ul>
+        </li>
+
       {% for _page in sitePages %}
 
         <!-- skip any pages without the showInHeader set to true -->

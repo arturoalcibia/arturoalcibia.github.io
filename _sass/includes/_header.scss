@@ -1,5 +1,5 @@
 header{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     @extend %page-padding;
     nav{
         ul{
@@ -7,8 +7,21 @@ header{
                 position: relative;
                 display: inline-block; 
                 margin-right : 5%;
-                font-size: 1rem;
+                font-size: 16px;
                 line-height: 2.3rem; 
+            }
+            ul > li {
+               float: left;
+               margin-right:10px;
+               margin-left:10px;
+            }
+            ul > li > ul {
+               display:inline-block;
+            }
+            .name {
+                top: -0.5em;
+                font-size: 35px;
+                font-weight: 1000;
             }
             .current {
                 font-weight: 700;
@@ -40,8 +53,10 @@ header{
                 width: 85%;
                 transition: width 350ms ease-in-out;
                 -webkit-transition: width 350ms ease-in-out; 
-                -moz-transition: width 350ms ease-in-out; 
-
+                -moz-transition: width 350ms ease-in-out;
+            }
+            .fa-cog {
+              color: #808FAB;
             }
         }
         
