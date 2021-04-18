@@ -33,19 +33,8 @@
       display: inline-block;
       width: 100%;
       .card {
-        -webkit-transition-duration: 0.8s;
-        -moz-transition-duration: 0.8s;
-        -ms-transition-duration: 0.8s;
-        -o-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-
         overflow: hidden;
-        background-color: #fff;
+        background-color: $slight_gray; // background of cards of projs aacolor
         border-radius: 10px;
         box-shadow: rgba($theme-dark2, 0.15) 0px 1px 5px;
         .img-wrap {
@@ -72,11 +61,11 @@
           padding: 20px 25px;
           // height: 180px;
           .title {
-            color: $theme-dark;
+            color: $text; // aacolor title projs
             font-weight: 600;
           }
           .date {
-            color: rgba(0, 0, 0, 0.5);
+            color: #eeeeee; // aacolor date projs
             font-size: 0.75rem;
             margin: 0;
           }
@@ -111,38 +100,6 @@
                 line-height: 1.8rem;
               }
             }
-            a.modal-btn i {
-              background-color: $theme-dark;
-              color: #fff;
-              font-size: 0.75rem;
-            }
-        }
-      }
-      .card:hover{
-        -webkit-transform: scale(1.03);
-        -moz-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-        -o-transform: scale(1.03);
-        transform: scale(1.03);
-        box-shadow: rgba($theme-dark2, 0.15) 0px 5px 15px;
-        .icons{
-          a {
-            i {
-              -webkit-transition-duration: 0.5s;
-              -moz-transition-duration: 0.5s;
-              -ms-transition-duration: 0.5s;
-              -o-transition-duration: 0.5s;
-              transition-duration: 0.5s;
-              background-color: $theme-color;
-              color: #fff;
-            }
-          }
-          a:hover {
-            i {
-              background-color: $theme-dark;
-              color: #fff;
-            }
-          }
         }
       }
     }
@@ -154,6 +111,5 @@
     width: 100%;
     height: 100%;
     top: 0px;
-    background-color: rgba(0, 0, 0, 0.05);
   }
 }

@@ -1,9 +1,10 @@
-$theme-color : #8b51a3;
+$theme-color : #00adb5; // highlighted aacolor of posts
 $theme-bright : #f7f4f9;
 $theme-dark : #563d7c;
 $theme-dark2 : #443063;
-$text : rgba(0,0,0,0.8);
-$text-gray : rgba(0,0,0,0.54);
+$text : #eeeeee; // text of posts and everything else! aacolor
+$text-gray : #e4f9f5; // text of tahgs aacolor
+$slight_gray : #5b6370; // slightly gray aacolor
 
 %page-padding {
     padding : 0px 0%!important;

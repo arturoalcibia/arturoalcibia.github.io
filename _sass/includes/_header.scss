@@ -56,7 +56,7 @@ header{
                 -moz-transition: width 350ms ease-in-out;
             }
             .fa-cog {
-              color: #808FAB;
+              color: $theme-color; // background icons aacolor
             }
         }
         

@@ -22,23 +22,11 @@
       .description {
         margin: 10px 0;
         font-size: 0.95rem;
+        color: $text; // color description about aacolor
       }
       @media (max-width: 767px) {
         margin-top: 15px;
         text-align: center;
-      }
-      #icons li {
-        i {
-          width: 35px;
-          height: 35px;
-          color: #fff;
-          background-color: $theme-dark;
-          line-height: 35px;
-        }
-        i:hover {
-          background-color: #fff;
-          color: $theme-dark;
-        }
       }
     }
     .bg {
@@ -48,7 +36,7 @@
       width: 100%;
       height: calc(100% + 110px);
       top: -55px;
-      background-color: $theme-dark;
+      background-color: $theme-color; // bg of about aacolor
     }
   }
   #career {
@@ -57,7 +45,7 @@
     margin-top: 55px;
     .title {
       margin-top: 15px;
-      color: $theme-dark;
+      color: $theme-color; // aacolor title
       font-size: 25px;
       font-weight: 600;
     }
@@ -85,7 +73,7 @@
           }
           .date {
             font-size: 0.75rem;
-            color: rgba(0, 0, 0, 0.5);
+            color: $text; // date in cv aacolor
           }
           .description {
             font-size: 1rem;
@@ -98,7 +86,7 @@
           height: 15px;
           top: 42%;
           left: -10px;
-          background-color: $theme-color;
+          background-color: $text; // dot of cv timeline aacolor
           border-radius: 50%;
         }
       }
@@ -131,7 +119,7 @@
             overflow: hidden;
             width: 100%;
             height: 18px;
-            background-color: rgba(0, 0, 0, 0.08);
+            background-color: $slight_gray; // bg of progress bar aacolor
             border-radius: 5px;
             animation-name: progressAnimation;
             animation-duration: 1s;
