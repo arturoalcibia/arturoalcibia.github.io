@@ -8,10 +8,7 @@ categories: [projects]
 comments : True
 ---
 
-# Control-less rig deformer like Pixar´s Presto
-
----
-Below you can see the deformer in action with multiple controls plugged to the rig.
+TLBelow you can see the deformer in action with multiple controls plugged to the rig.
 
 {% include vimeo-player.html id="266764598" %}
 ---
@@ -32,11 +29,6 @@ performance once multiple controls had been created.
 ![Desktop View](/assets/img/control-lessRig/patchNode_compressed.gif)
 
 ---
-
----
-
 ## Future plans:
 
 - [ ] Using the GPU should improve performance and looks interesting to dive into.
-
----
