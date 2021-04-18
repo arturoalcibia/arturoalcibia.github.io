@@ -8,6 +8,14 @@
           <div class="post-wrap">
             <div class="text-warp">
               <h3 class="title">{{ post.title }}</h3>
+                <ul class="tag-wrap">
+                  <span class="meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+                  {% for tag in post.tags %}
+                  <a href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">
+                    <li class="tag-sm">{{ tag }}</li>
+                  </a>
+                  {% endfor %}
+                </ul>
               <p class="excerpt">
                 {% if post.excerpt.size > 50 %}
                 {{ post.excerpt | strip_html | strip_newlines | truncatewords: 25, '...' }}
@@ -15,18 +23,6 @@
                 {{ post.subtitle }}
                 {% endif %}
               </p>
-              <div>
-                <span class="meta">
-                  {{ post.date | date: "%B %-d, %Y" }}
-                </span>
-                <ul class="tag-wrap">
-                  {% for tag in post.tags %}
-                  <a href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">
-                    <li class="tag-sm">{{ tag }}</li>
-                  </a>
-                  {% endfor %}
-                </ul>
-              </div>
             </div>
             {% if post.image %}
             <div class="img-wrap">

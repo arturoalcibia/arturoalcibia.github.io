@@ -1,17 +1,16 @@
 # Site Settings
 baseurl: ""
-url : "https://naye0ng.github.io"
+url : "https://arturoalcibia.dev"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : Arturo Alcibia
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    username : Arturo Alcibia
+    description : I’m a CG pipeline developer with experience in film production. Always wanting to learn more and passionate on problem solving.
     experience :
       - start : 2017-05-03
         end : 2018-05-06
@@ -19,19 +18,6 @@ theme_settings :
     skills : 
       - skill : HTML5 & CSS
         value : 85  # Percent value
-        
-  # Icons
-  icons :
-    email:  # Full email address, e.g. "sample@google.com"
-    linkedin:  # Full URL 
-    github: naye0ng
-    gitlab: 
-    bitbucket: 
-    google_plus:
-    twitter:
-    youtube:
-    facebook:
-    instagram:
 
 # Pagination
 paginate: 5
