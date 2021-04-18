@@ -43,7 +43,7 @@
         {% if _page.title == "Blog" %}
             {% assign pageUrl = site.url %}
           {% else %}
-            {% assign pageUrl = site.url | append: '/' | append: _page.title %}
+            {% assign pageUrl = site.url | append: '/' | append: _page.title | downcase %}
           {% endif %}
 
         <a href="{{ pageUrl }}">
