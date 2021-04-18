@@ -1,6 +1,3 @@
-{% assign _url = page.url | split: "/" %}
-{% assign current = _url[-1] | split: "." %}
-
 {% assign sitePages = site.pages | sort: 'order' %}
 
 <header>
@@ -17,6 +14,21 @@
 
       {% for _page in sitePages %}
 
+        <!-- Mark as current any page inside blogs/projects -->
+        {% assign isSubUrl = false %}
+        {% if page.path contains "_posts" and _page.title == "Blog" %}
+          {% assign isSubUrl = true %}
+        {% elsif page.path contains "_projects" and _page.title == "Projects" %}
+          {% assign isSubUrl = true %}
+        {% endif %}
+
+        <!-- if page is current page, change the style -->
+        {% if _page.path == page.path or isSubUrl %}
+          {% assign btnClass = "current btn-nav" %}
+        {% else %}
+          {% assign btnClass = "btn-nav" %}
+        {% endif %}
+
         <!-- skip any pages without the showInHeader set to true -->
         {% unless _page.showInHeader == true %}
           {% continue %}
@@ -26,13 +38,6 @@
         {% if _page.path contains "blog/page" %}
           {% continue %}
         {% endif %}
-
-        <!-- if page is current page, change the style -->
-        {% if _page.path == page.path %}
-            {% assign btnClass = "current btn-nav" %}
-          {% else %}
-            {% assign btnClass = "btn-nav" %}
-          {% endif %}
 
         <!-- if Blog page (index.html) change to main url -->
         {% if _page.title == "Blog" %}
