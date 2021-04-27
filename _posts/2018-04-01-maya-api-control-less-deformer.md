@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Control-less rig deformer like Pixar's Presto
-subtitle : 
-tags: [Maya api, maya deformer, rig, pixar presto]
+subtitle :
+tags: [Maya, c++]
 author: Arturo Alcibia
 categories: [projects]
 comments : True
 ---
 
-TLBelow you can see the deformer in action with multiple controls plugged to the rig.
+Maya deformer to manipulate your rig directly from the mesh.
 
 {% include vimeo-player.html id="266764598" %}
 ---

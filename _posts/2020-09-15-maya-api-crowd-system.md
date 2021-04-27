@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Crowd system | Maya Api
-subtitle : 
-tags: [Maya, python, c++, maya api, maya deformer, crowd, crowd system]
+title: Crowd system Part 1
+sequence: crowdsMaya
+part:
+tags: [Maya, c++]
 author: Arturo Alcibia
 comments : True
 ---
 
-## TL;DR
-
 This node is a basic crowd system for taking 'agents' from point A to point B
-while dodging other agents and mesh obstacles (walls, non-walkable areas, etc.)
+ while dodging other agents and mesh obstacles (walls, non-walkable areas, etc.)
 
 - A* algorithm
 - Written in C++ for better performance

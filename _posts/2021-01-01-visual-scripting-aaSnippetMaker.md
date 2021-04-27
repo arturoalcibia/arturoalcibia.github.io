@@ -1,17 +1,12 @@
 ---
 layout: post
-title: Visual scripting | Capture your actions inside Maya
-subtitle :
-tags: [Maya, python, PyQt, Qt, script editor]
+title: Capture your actions inside Maya | Visual scripting
+tags: [Maya, python, PyQt]
 author: Arturo Alcibia
 comments : True
 ---
 
-- [x] First post of the year!
-
-## TL;DR:
-
-This tool captures everything you do on Maya to automatically have it converted to `Python`/`MEL`
+This tool captures everything you do on Maya to automatically have it converted to `Python`/`MEL`. You can also script visually!
 
 You can also modify the commands parameters from the UI.
 

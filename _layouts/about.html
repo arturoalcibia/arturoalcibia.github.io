@@ -23,8 +23,9 @@ layout: page
       <ul class="exper-list">
         {% for exp in  profile.experience %}
         <li class="meta">
-          <p class="date">{{ exp.start }} ~ {{ exp.end }}</p>
-          <p class="description">{{ exp.experience }}</p>
+          <p class="role">{{ exp.role }}</p>
+          <p class="studio">{{ exp.studio }}</p>
+          <p class="date">{{ exp.start }} - {{ exp.end }}</p>
         </li>
         {% endfor %}
       </ul>
@@ -37,7 +38,7 @@ layout: page
           <p class="name">{{ _.skill }}</p>
           <div class="progress">
             <div class="progress-bar" style="width: {{ _.value }}%">
-              <div class="progress-value">{{ _.value }}%</div>
+              <div class="progress-value"></div>
             </div>
           </div>
         </li>

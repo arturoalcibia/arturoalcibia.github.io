@@ -3,6 +3,6 @@ title: Projects
 layout: projects
 permalink: /projects/
 collection: projects
-showInHeader: true
+showInHeader: false
 order: 2
 ---

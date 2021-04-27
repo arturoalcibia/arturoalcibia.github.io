@@ -18,6 +18,39 @@ layout: page
   <i class="fas fa-chevron-up"></i>
 </div>
 
+<!-- If no part is set, do not display other parts section -->
+{% if page.part %}
+  <b> Other parts of this collection: </b>
+{% endif %}
+
+<!-- Display other parts of the post -->
+{% for post in site.posts %}
+
+  {% if page.sequence != post.sequence %}
+    {% continue %}
+  {% endif %}
+
+  {% if page.part == post.part %}
+    {% continue %}
+  {% endif %}
+
+  <u>
+    <a href="{{ post.url }}">
+      <li>{{ post.title }}</li>
+    </a>
+  </u>
+
+{%- endfor -%}
+<!-- -->
+
+<script src="https://utteranc.es/client.js"
+        repo="arturoalcibia/arturoalcibia.github.io"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
 <!-- Footer -->
 {% include footer.html %}
 

@@ -11,12 +11,37 @@ theme_settings :
     username : Arturo Alcibia
     description : I’m a CG pipeline developer with experience in film production. Always wanting to learn more and passionate on problem solving.
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - role : Pipeline T.D.
+        studio : On Animation Studio
+        start : April 2020
+        end : April 2021
+      - role : Rigging Pipeline T.D.
+        studio : L'Atelier Animation
+        start : April 2019
+        end : April 2020
+      - role : Rigging Pipeline T.D.
+        studio: Huevocartoon
+        start : September 2018
+        end : March 2019
+      - role : Pipeline T.D.
+        studio: MKF Animation
+        start : October 2017
+        end : September 2018
+      - role : Pipeline T.D.
+        studio: Cluster Studio
+        start : April 2017
+        end : October 2017
     skills : 
-      - skill : HTML5 & CSS
-        value : 85  # Percent value
+      - skill : Python
+        value : 85
+      - skill : C++
+        value : 60
+      - skill : C#
+        value : 40
+      - skill : Lua
+        value : 40
+      - skill : html - css
+        value : 40
 
 # Pagination
 paginate: 5
