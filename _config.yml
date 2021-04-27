@@ -1,6 +1,8 @@
 # Site Settings
 url : "https://arturoalcibia.dev"
 
+google_analytics: G-S9QPBW7EYH
+
 # Blog Settings
 theme_settings :
   title : Arturo Alcibia
@@ -35,13 +37,13 @@ theme_settings :
       - skill : Python
         value : 85
       - skill : C++
-        value : 60
+        value : 40
       - skill : C#
         value : 40
       - skill : Lua
         value : 40
       - skill : html - css
-        value : 40
+        value : 20
 
 # Pagination
 paginate: 5
