@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Control-less rig deformer like Pixar's Presto
+title: Maya | Control-less rig deformer like Pixar's Presto
 subtitle :
 tags: [Maya, c++]
 author: Arturo Alcibia
-categories: [projects]
 comments : True
+icon: assets/project/directSelection.jpg
 ---
 
 Maya deformer to manipulate your rig directly from the mesh.
