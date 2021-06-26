@@ -2,6 +2,6 @@
 title: Blog
 layout: blog
 permalink: /blog/
-showInHeader: true
+showInHeader: false
 order: 2
 ---

@@ -14,6 +14,10 @@ theme_settings :
     description : I’m a CG pipeline developer with experience in film production. Always wanting to learn more and passionate on problem solving.
     experience :
       - role : Pipeline T.D.
+        studio : Sony Imageworks
+        start : April 2021
+        end : Present
+      - role : Pipeline T.D.
         studio : On Animation Studio
         start : April 2020
         end : April 2021

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Motion Blur deformer
+title: Maya | Motion Blur deformer
 subtitle :
 tags: [Maya, c++]
 author: Arturo Alcibia
 comments : True
+icon: assets/project/motionBlur.jpg
 ---
 
 This deformer creates a motion blur-like effect on the geometry based on its vertex velocity.

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Crowd system Part 1
+title: Maya | Custom crowd system
 sequence: crowdsMaya
 part:
 tags: [Maya, c++]
 author: Arturo Alcibia
 comments : True
+icon: assets/project/crowd.jpg
 ---
 
 This node is a basic crowd system for taking 'agents' from point A to point B

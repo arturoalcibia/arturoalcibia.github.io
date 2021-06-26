@@ -10,14 +10,11 @@
               <a href="{{ site.url }}{{ project.url }}">
               <div class="card-wrapper">
                 <div class="card">
-                  {% if project.image %}
                   <div class="img-wrap">
-                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+                    <img src="{{ project.icon }}" alt="">
                   </div>
-                  {% endif %}
                   <div class="text-wrap {% if project.image %}{% endif %}">
                     <div class="title-wrap">
-                      <p class="date">{{ project.date }}</p>
                       <div class="title">{{ project.title }}</div>
                     </div>
                   </div>

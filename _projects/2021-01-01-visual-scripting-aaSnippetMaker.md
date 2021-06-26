@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Capture your actions inside Maya | Visual scripting
+title: Maya | Capture your actions inside Maya | Visual scripting
 tags: [Maya, python, PyQt]
 author: Arturo Alcibia
 comments : True
+icon: assets/project/snippetMaker.jpg
 ---
 
 This tool captures everything you do on Maya to automatically have it converted to `Python`/`MEL`. You can also script visually!
