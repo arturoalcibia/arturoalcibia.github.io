@@ -45,11 +45,8 @@ theme_settings :
       - skill : html - css
         value : 20
 
-# Pagination
-paginate: 5
-paginate_path: "blog/page:num"
 
-# Build Ssttings
+# Build Settings
 sass:
   sass_dir: _sass
   style: :compressed
@@ -76,3 +73,14 @@ defaults:
       layout: page
       author_profile: false
       share: true
+
+contact:
+  - type: github
+    icon: 'fab fa-github'
+    link: 'https://github.com/arturoalcibia'
+  - type: vimeo
+    icon: 'fab fa-vimeo-v'
+    link: 'https://vimeo.com/user63620535'
+  - type: linkedIn
+    icon: 'fab fa-linkedin'
+    link: 'https://ca.linkedin.com/in/arturo-zahar-alcibia-980925165'

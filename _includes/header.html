@@ -6,7 +6,7 @@
 
         <li class="name"><a href="{{ site.url }}"> Arturo Alcibia </a>
           <ul>
-            {% for entry in site.data.contact %}
+            {% for entry in site.contact %}
               <li> <a href="{{ entry.link }}"> <i class="fa-cog {{ entry.icon }} fa-lg"></i></a> </li>
             {% endfor %}
           </ul>
@@ -40,7 +40,7 @@
         {% endif %}
 
         <!-- if Blog page (index.html) change to main url -->
-        {% if _page.title == "Blog" %}
+        {% if _page.title == "Projects" %}
             {% assign pageUrl = site.url %}
           {% else %}
             {% assign pageUrl = site.url | append: '/' | append: _page.title | downcase %}

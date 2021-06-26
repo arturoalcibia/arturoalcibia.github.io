@@ -1,4 +1,3 @@
-{% include analytics.html %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +21,7 @@
   {% else %}
   {% assign title = site.theme_settings.title %}
   {% endif %}
+
   <meta name="title" content="{{ title }}" />
   <meta name="author" content="{{ site.theme_settings.profile.username }}" />
   <meta name="keywords" content="{{ page.tags | join: ',' }}" />
@@ -35,12 +35,6 @@
     content="{{ site.url }}/{% if page.image %}{{ page.image }}{% else %}{{ site.theme_settings.profile.image }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.theme_settings.title }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ page.subtitle }}" />
-  <meta name="twitter:image"
-    content="{{ site.url }}/{% if page.image %}{{ page.image }}{% else %}{{ site.theme_settings.profile.image }}{% endif %}" />
 
   <title>{{ title }}</title>
 </head>
