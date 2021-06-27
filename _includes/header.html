@@ -1,56 +1,21 @@
-{% assign sitePages = site.pages | sort: 'order' %}
 
-<header>
-  <nav>
-    <ul>
+<header class="site-header">
 
-        <li class="name"><a href="{{ site.url }}"> Arturo Alcibia </a>
-          <ul>
-            {% for entry in site.contact %}
-              <li> <a href="{{ entry.link }}"> <i class="fa-cog {{ entry.icon }} fa-lg"></i></a> </li>
-            {% endfor %}
-          </ul>
-        </li>
+  <div class="wrapper">
 
-      {% for _page in sitePages %}
+    {% for entry in site.contact %}
+      <a style="padding-left:10px;" href="{{ entry.link }}"> <i class="fa {{ entry.icon }}"></i></a>
+    {% endfor %}
 
-        <!-- Mark as current any page inside blogs/projects -->
-        {% assign isSubUrl = false %}
-        {% if page.path contains "_posts" and _page.title == "Blog" %}
-          {% assign isSubUrl = true %}
-        {% elsif page.path contains "_projects" and _page.title == "Projects" %}
-          {% assign isSubUrl = true %}
-        {% endif %}
+    <a style="padding-left:10px;" href="{{ site.url }}"> Arturo Alcibia </a>
 
-        <!-- if page is current page, change the style -->
-        {% if _page.path == page.path or isSubUrl %}
-          {% assign btnClass = "current btn-nav" %}
-        {% else %}
-          {% assign btnClass = "btn-nav" %}
-        {% endif %}
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for page in sorted_pages %}
+      {% if page.showInHeader %}
+        <a style="float: right;" class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
 
-        <!-- skip any pages without the showInHeader set to true -->
-        {% unless _page.showInHeader == true %}
-          {% continue %}
-        {% endunless %}
+  </div>
 
-        <!-- skip any pages generated from pagination -->
-        {% if _page.path contains "blog/page" %}
-          {% continue %}
-        {% endif %}
-
-        <!-- if Blog page (index.html) change to main url -->
-        {% if _page.title == "Projects" %}
-            {% assign pageUrl = site.url %}
-          {% else %}
-            {% assign pageUrl = site.url | append: '/' | append: _page.title | downcase %}
-          {% endif %}
-
-        <a href="{{ pageUrl }}">
-          <li class=" {{ btnClass }} ">{{ _page.title }}</li>
-        </a>
-
-      {% endfor %}
-      </ul>
-  </nav>
 </header>

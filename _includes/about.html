@@ -1,0 +1,14 @@
+<ul class="timeline">
+  {% for exp in site.profile.experience %}
+  <li>
+    <div class="direction-l">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">{{ exp.role }}</span>
+        <span class="time-wrapper"><span class="time">{{ exp.start }} - {{ exp.end }}</span></span>
+      </div>
+        <div class="desc">{{ exp.studio }}</div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,19 +1,21 @@
 ---
 layout: post
-title: Maya | Control-less rig deformer like Pixar's Presto
-subtitle :
-tags: [Maya, c++]
-author: Arturo Alcibia
-comments : True
-icon: assets/project/directSelection.jpg
+title: Maya - Control-less rig deformer like Pixar's Presto
+img: /assets/project/directSelection.jpg
+tag: [Maya, c++]
 ---
 
 Maya deformer to manipulate your rig directly from the mesh.
 
 {% include vimeo-player.html id="266764598" %}
+
 ---
 
+ 
+
 ## Functionality
+
+ 
 
 This deformer allows you to have rig controls directly on the mesh itself.
 
@@ -29,6 +31,11 @@ performance once multiple controls had been created.
 ![Desktop View](/assets/img/control-lessRig/patchNode_compressed.gif)
 
 ---
+
+ 
+
 ## Future plans:
+
+ 
 
 - [ ] Using the GPU should improve performance and looks interesting to dive into.

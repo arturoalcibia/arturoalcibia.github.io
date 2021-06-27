@@ -1,14 +1,9 @@
 ---
 layout: post
-title: Maya | Custom crowd system
-sequence: crowdsMaya
-part:
-tags: [Maya, c++]
-author: Arturo Alcibia
-comments : True
-icon: assets/project/crowd.jpg
+title: Maya - Custom crowd system
+img: /assets/project/crowd.jpg
+tag: [Maya, c++]
 ---
-
 This node is a basic crowd system for taking 'agents' from point A to point B
  while dodging other agents and mesh obstacles (walls, non-walkable areas, etc.)
 
@@ -19,9 +14,14 @@ Below a demonstration on the crowd system.
 
 {% include vimeo-player.html id="458343983" %}
 
+ 
+
 ---
 
+ 
 ## Functionality
+
+ 
 
 Every agent, based on its priority, will wait if another agent is obstructing its path and continue when it's clear.
 
@@ -55,7 +55,12 @@ To conclude, this crowd system is able to:
 - Store the procedural path on cached playback.
 
 ---
+
+ 
+
 ## Future plans:
+
+ 
 
 - [ ] The aim direction is calculated by inspecting the next position on the path, the path itself could be smoother for a more natural looking walking
 - [ ] There is ton of theory to study from for optimization and features.

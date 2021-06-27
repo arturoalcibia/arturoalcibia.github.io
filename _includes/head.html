@@ -1,45 +1,18 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Favicon-->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.theme_settings.favicon }}" type="image/x-icon">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-
-  <!-- Spoqa Han Sans -->
-  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
-  <!-- OG Tag -->
-  {% if page.title %}
-  {% assign title = site.theme_settings.title | append: "-" | append: page.title %}
-  {% else %}
-  {% assign title = site.theme_settings.title %}
-  {% endif %}
-
-  <meta name="title" content="{{ title }}" />
-  <meta name="author" content="{{ site.theme_settings.profile.username }}" />
-  <meta name="keywords" content="{{ page.tags | join: ',' }}" />
-  <meta name="description" content="{{ page.subtitle }}" />
-  <meta name="robots" content="index,follow" />
-
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ page.subtitle }}" />
-  <meta property="og:type" content="website, blog" />
-  <meta property="og:image"
-    content="{{ site.url }}/{% if page.image %}{{ page.image }}{% else %}{{ site.theme_settings.profile.image }}{% endif %}" />
-  <meta property="og:site_name" content="{{ site.theme_settings.title }}" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-
-  <!-- Disabling of caching -->
-  <meta http-equiv='cache-control' content='no-cache'>
-  <meta http-equiv='expires' content='0'>
-  <meta http-equiv='pragma' content='no-cache'>
-
-  <title>{{ title }}</title>
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    {% if page.img %}
+    <meta property="og:image" content="{{ site.url }}{{page.img}}"/>
+    {% endif %}
+    
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>

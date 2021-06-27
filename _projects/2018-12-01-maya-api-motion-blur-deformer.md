@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Maya | Motion Blur deformer
-subtitle :
-tags: [Maya, c++]
-author: Arturo Alcibia
-comments : True
-icon: assets/project/motionBlur.jpg
+title: Maya - Motion Blur deformer
+img: /assets/project/motionBlur.jpg
+tag: [Maya, c++]
 ---
-
 This deformer creates a motion blur-like effect on the geometry based on its vertex velocity.
-
 Below you can see the deformer in action with some animation examples.
 
 {% include vimeo-player.html id="308612811" %}
 
+ 
+
 ---
 
+ 
 
 ## Functionality
+
+ 
 
 This deformer creates a motion blur-like effect on the geometry based on its vertex velocity.
 
