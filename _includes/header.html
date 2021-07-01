@@ -7,7 +7,7 @@
       <a style="padding-left:10px;" href="{{ entry.link }}"> <i class="fa {{ entry.icon }}"></i></a>
     {% endfor %}
 
-    <a style="padding-left:10px;" href={{ page.url | prepend: site.baseurl }}> Arturo Alcibia </a>
+    <a style="padding-left:10px;" href={{ site.url }}> Arturo Alcibia </a>
 
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% for page in sorted_pages %}
