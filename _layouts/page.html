@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    {% unless page.permalink == '/' %}
+    {% unless page.showTitle %}
       <h1 class="post-title">{{ page.title }}</h1>
     {% endunless %}
     <h5 class="post-description">{{ page.description }}</h5>
