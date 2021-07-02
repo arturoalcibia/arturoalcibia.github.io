@@ -1,0 +1,14 @@
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='';}"></iframe>
+
+<h4 class="post-title"> Want to sign up for beta testing / download this tool?</h4>
+<h4 class="post-title"> Send me your email below!</h4>
+
+<form style="text-align: center;" action="{{ site.comment-post }}/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+    <input type="hidden" name="entry.1448189702" type="text" value="{{ page.url }}" />
+    <input  name="entry.1417504055" type="email" placeholder="Email"/>
+    <input type="submit" value="Send" />
+    <br>
+    <br>
+    <br>
+</form>

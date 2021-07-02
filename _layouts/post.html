@@ -7,13 +7,14 @@ layout: default
     <div>
         <p style="float: right;">
         </p>
-        <h1 class="post-title">{{ page.title }}</h1>
+      <h1 class="post-title">{{ page.title }}</h1>
         <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
 
     </div>
   </header>
 
   <article class="post-content">
+    {% include betaSignUp.html %}
     {{ content }}
   </article>
   <hr>
@@ -26,7 +27,6 @@ layout: default
     {% endfor %}
     {% endif %}
   </p>
-
   {% include utterances.html %}
 
 </div>
